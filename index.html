@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="id">
 
 
 <head>
@@ -37,61 +37,37 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body class="bg-black">
-    <style>
-        * {
-            -webkit-user-select: none;
-            /* Safari */
-            -moz-user-select: none;
-            /* Firefox */
-            -ms-user-select: none;
-            /* IE10+/Edge */
-            user-select: none;
-            /* Standard */
+<body>
 
-        }
-.popup {
-    transition: all;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-z-index: 100;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+    <div id="loader" class="fixed z-[999] bg-black w-full bg-opacity-60 flex justify-center items-center h-[100vh]"><svg class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+				<stop offset="0%" stop-color="#5ebd3e" />
+				<stop offset="33%" stop-color="#ffb900" />
+				<stop offset="67%" stop-color="#f78200" />
+				<stop offset="100%" stop-color="#e23838" />
+			</linearGradient>
+			<linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
+				<stop offset="0%" stop-color="#e23838" />
+				<stop offset="33%" stop-color="#973999" />
+				<stop offset="67%" stop-color="#009cdf" />
+				<stop offset="100%" stop-color="#5ebd3e" />
+			</linearGradient>
+		</defs>
+		<g fill="none" stroke-linecap="round" stroke-width="16">
+			<g class="ip__track" stroke="#ddd">
+				<path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+				<path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+			</g>
+			<g stroke-dasharray="180 656">
+				<path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0" d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"/>
+				<path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358" d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"/>
+			</g>
+		</g>
+	</svg>
+</div>
 
-.tombol {
-    z-index: 100;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-   margin-left: -1%;
-   margin-top:-1%;
-    
-}
-
-.popup-content {
-z-index: 100;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  background-color: #fff;
-  overflow: visible;
-}
-    </style>
-
-
-    <div class=" w-[100%] absolute  bg-[url('./img/bg5.png')] bg-fixed md:bg-cover    bg-no-repeat">
+    <div id="konten" class=" w-[100%] absolute  bg-[url('./img/bg5.png')] bg-fixed md:bg-cover    bg-no-repeat">
         <!-- <video id="background-video" class="w-full object-cover h-full fixed" autoplay loop muted poster="">
             <source class="w-full" src="./vid/1.mp4" type="video/mp4">
             </video> -->
@@ -106,26 +82,27 @@ z-index: 100;
                         <img class="relative scale-75  lg:-top-6 shadow-2xl shadow-white contents rounded-full"
                             src="./img/jurnal.png" alt="">
                     </div>
-                   
-                    <div class=" py-5 h-fit   bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent  text-4xl transition-transform
-                    animate__fadeInDown animate__animated
+
+                    <div class="tt py-5 h-fit  bg-gradient-to-r from-red-600 to-yellow-500 bg-clip-text text-transparent  text-4xl transition-transform
+                    animate__fadeInDown animate__animated 
                     
                     
                     lg:text-6xl font-extrabold font- text-center" style="font-family: 'M PLUS 1', sans-serif;"> Majalah
                         Digital SMPN 21 Semarang
                     </div>
                     <div
-                        class="mt-9  animate__fadeIn animate__delay-1s --animate-duration: 2s animate__animated mx-3 font-bold text-white text-xl lg:text-[23px] text-center">
+                        class="mt-9 tt animate__fadeIn animate__delay-1s --animate-duration: 2s animate__animated mx-3 font-bold text-white text-xl lg:text-[23px] text-center">
                         Temukan karya
                         siswa
                         SPEDUSA dalam
                         bentuk digital. </div>
 
-                    <a style="outline: none;" class="  animate__zoomIn animate__animated animate__delay-2s text-white w-fit mx-auto block border rounded-full  py-3 mt-9 px-10 active:scale-90 hover:bg-white/10 duration-500 transition-all  lg:text-xl text-lg  font-bold"
+                    <a style="outline: none;"
+                        class=" tt animate__zoomIn animate__animated animate__delay-2s text-white w-fit mx-auto block border rounded-full  py-3 mt-9 px-10 active:scale-90 hover:bg-white/10 duration-500 transition-all  lg:text-xl text-lg  font-bold"
                         href="#sec">Mulai</a>
 
                 </div>
-                <div class=" animate__fadeInUp animate__delay-3s animate__animated  mt-56 md:mt-28 lg:mt-40">
+                <div class="tt animate__fadeInUp animate__delay-3s animate__animated  mt-56 md:mt-28 lg:mt-40">
                     <div
                         class=" relative mt-9 mx-auto h-fit md:scale-125 md:mt-24 scale-100 lg:scale-[1.5] xl:scale-[2] w-fit">
                         <div class="relative col-span-1  h-96 flex justify-center">
@@ -159,12 +136,12 @@ z-index: 100;
 
         <!-- layer 2 -->
         <div data-aos="fade-down" data-aos-duration="1000" id="sec"
-            class=" bg-no-repeat bg-cover pt-5 pb-14  relative ">
+            class=" bg-no-repeat tt bg-cover pt-5 pb-14  relative ">
             <div id="slide2" class="grid  grid-cols-1 
      mt-6">
                 <div class="mx-auto  mt-12 col-span-1  max-w-2xl ">
                     <div
-                        class="mx-5 border hover:bg-white/[0.02] border-orange-400 z-10    group  p-10   duration-500 ease-out transition-all  rounded-[10px] shadow-[0px_0px_5px_2px_rgba(0,0,0,0.5)] backdrop-blur-xl   ">
+                        class="mx-5 border hover:bg-white/[0.02] border-orange-400 z-10   group  p-10   duration-500 ease-out transition-all  rounded-[10px] shadow-[0px_0px_5px_2px_rgba(0,0,0,0.5)] backdrop-blur-xl   ">
                         <h1 style="font-family: 'Montserrat', sans-serif;"
                             class=" text-center    lg:text-5xl           font-extrabold  text-4xl text-orange-500">Latar
                             Belakang</h1>
@@ -186,23 +163,19 @@ z-index: 100;
 
 
         <div class="')] bg-fixed bg-center py-32 bg-no-repeat bg-cover   w-full relative">
-            <div class="">
-
-            </div>
-
-
-            <section
-                class="hover:bg-white/[0.02] transition-all duration-500 border border-purple-900/30 swiper shadow-[0px_0px_5px_2px_rgba(0,0,0,1)] rounded-[10px] mySwiper backdrop-blur-md  w-[95%] p-20">
+          
+            <section id="flipbook"
+                class="hover:bg-white/[0.02] transition-all duration-500 border border-purple-900/30 swiper hidden shadow-[0px_0px_5px_2px_rgba(0,0,0,1)] rounded-[10px] mySwiper backdrop-blur-md  w-[95%] p-20">
                 <span class="flex min-w-lg  ">
                     <h1 class="mx-auto w-full -mb-10 lg:mb-16 text-center text-3xl lg:text-7xl font-extrabo inline-block text-[#FFEF00]"
                         style="font-family: 'Russo One', sans-serif;">
                         <p class="text-red-600 inline-block"> E-</p>MAJALAH
                     </h1>
                 </span>
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper ">
                     <div class="card  swiper-slide ">
                     </div>
-                   <img id="buka" class="card swiper-slide" src="./img/coverdep.jpg" alt="" srcset="">
+                    <img id="buka" class="card swiper-slide" src="./img/coverdep.jpg" alt="" srcset="">
                     <div class="card swiper-slide">
                     </div>
                 </div>
@@ -322,9 +295,9 @@ z-index: 100;
 
         </div>
         <div class=" transition-all w-fit mt-24 h-fit mx-auto hover:scale-105 active:scale-95 rounded-full ">
-        <a data-aos="fade-up" data-aos-duration="1000" style="outline: none;"
-            class="   text-white backdrop-blur-3xl w-fit mx-auto block  rounded-full  py-3  px-10  bg-gradient-to-r from-red-600 to-yellow-500  duration-500 transition-all  lg:text-xl text-lg  font-bold  "
-            href="https://spedusatimes.blogspot.com">Kembali Ke Blog</a>
+            <a data-aos="fade-up" data-aos-duration="1000" style="outline: none;"
+                class="   text-white backdrop-blur-3xl w-fit mx-auto block  rounded-full  py-3  px-10  bg-gradient-to-r from-red-600 to-yellow-500  duration-500 transition-all  lg:text-xl text-lg  font-bold  "
+                href="https://spedusatimes.blogspot.com">Kembali Ke Blog</a>
         </div>
 
         <div class=" border border-transparent  backdrop-blur-xl mt-36  w-full bg-black/50 h-[250px]  ">
@@ -335,31 +308,8 @@ z-index: 100;
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-<script>
-    const popupBtn = document.getElementById("buka");
-    const popup = document.createElement("div");
-    const popupContent = document.createElement("div");
-    const tombol = document.createElement("div")
-    tombol.classList.add('tombol')
-    popup.classList.add("popup");
-    popupContent.classList.add("popup-content");
-  
-    document.body.appendChild(popup);
-    popup.appendChild(popupContent);
-    
-    popupBtn.addEventListener("click", function() {
-      popup.style.display = "block";
-      popupContent.innerHTML = ` <iframe allowfullscreen="true" class="w-full transition-all h-[90%] absolute mt-5" src="https://ilham12359.github.io/emajalah/"></iframe>`;
-    popupContent.appendChild(tombol);
-    });
-    tombol.addEventListener('click',function(){
-        popup.style.display = "none";
-    })
-  </script>
+    <script>;</script>
+    <script src="function.js"></script>
 </body>
 
 </html>
