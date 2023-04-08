@@ -45,7 +45,7 @@ window.addEventListener('load', function () {
         html.classList.add('scroll-smooth')
         document.body.classList.remove('overflow-hidden')
         AOS.init()
-    }, 3000)
+    }, 1000)
     
 });
 
