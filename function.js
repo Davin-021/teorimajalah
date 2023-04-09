@@ -21,12 +21,13 @@ tombol.addEventListener('click', function () {
 let book = this.document.getElementById('flipbook')
 var html = document.documentElement;
 let i
+let konten = document.getElementById('konten')
 window.addEventListener('load', function () {
     
     document.body.classList.add('overflow-hidden')
     let book = this.document.getElementById('flipbook')
     let preloader = document.getElementById('loader')
-    let konten = document.getElementById('konten')
+    
     let konten1 = this.document.getElementsByClassName('tt')
     for (var i = 0; i < konten1.length; i++) {
         konten1[i].classList.add('freeze')
@@ -45,5 +46,24 @@ window.addEventListener('load', function () {
     }, 1000)
     
 });
+
+const inputGambar = document.getElementById('input-gambar');
+const ubahGambar = document.getElementById('ubah-gambar');
+const bgImage = document.getElementById('konten');
+
+ubahGambar.addEventListener('click', function() {
+  if (inputGambar.files && inputGambar.files[0]) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      bgImage.style.backgroundImage = "url('" + e.target.result + "')";
+    }
+    reader.readAsDataURL(inputGambar.files[0]);
+  }
+  else{
+    alert('gambar kosong')
+  }
+});
+
+  
 
 

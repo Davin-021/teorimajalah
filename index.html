@@ -38,6 +38,12 @@
 </head>
 
 <body>
+    <form>
+        <label for="file">Pilih file:</label>
+        <input type="file" id="input-gambar" name="file">
+        <h1 id="ubah-gambar" onclick="showFileUrl()">TESSS</h1>
+      </form>
+  
 
     <div id="loader" class=" fixed z-[999] bg-black w-full bg-opacity-60 flex justify-center items-center h-[100vh]"><svg class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
 		<defs>
@@ -68,7 +74,7 @@
 </div>
 
     <div id="konten" class=" w-[100%] absolute  bg-[url('https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130498.jpg&fm=jpg')] bg-fixed bg-cover    bg-no-repeat">
-        <div id="navbar" class="rounded-b-xl backdrop-blur grid grid-cols-4 fixed  bg-white/50 w-full top-0 left-0 h-16 lg:h-16 z-[999]">
+        <div id="navbar" class=" backdrop-blur hidden grid-cols-4 fixed  bg-white/90 w-full top-0 left-0 h-16 lg:h-16 z-[999]">
             <div class="col-span-1 col-start-1  h-full flex  items-center">
                <img src="./img/jurnal.png" class="h-14 ml-10" alt="">
             </div>
@@ -87,7 +93,7 @@
         <!-- <video id="background-video" class="w-full h-full object-cover fixed" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
             <source src="https://joy1.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0933_preview.mp4" type="video/mp4">
             </video> -->
-        <div class="h-fit mx-3 lg:mx-5 pb-14 rounded-xl bg-white/40 backdrop-blur-md duration-500    mt-14">
+        <div class="h-fit mx-3 lg:mx-5 pb-14 rounded-2xl bg-white/60 lg:border-[2px] backdrop-blur-3xl duration-500    mt-14">
             <div
                 class="     rounded-xl py-[7%] px-5 relative grid lg:grid-cols-2 grid-cols-1 w-[95%] mx-auto   transition-all  z-50">
 
@@ -118,7 +124,7 @@
                 </div>
                 <div class="tt animate__fadeInUp animate__delay-3s animate__animated  mt-56 md:mt-28 lg:mt-40">
                     <div
-                        class=" relative mt-9 mx-auto h-fit md:scale-125 md:mt-24 scale-100 lg:scale-[1.5] xl:scale-[2] w-fit">
+                        class=" relative mt-16 mx-auto h-fit md:scale-125 md:mt-24 scale-100 lg:scale-[1.5] xl:scale-[2] w-fit">
                         <div class="relative col-span-1  h-96 flex justify-center">
                             <div class=" bottom- -z-20 h-full w-[100%] absolute flex justify-center "
                                 style="align-items: center;">

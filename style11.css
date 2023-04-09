@@ -190,3 +190,7 @@ overflow: visible;
 .freeze {
   animation-play-state: paused !important;
 }
+
+.custom{
+  background-image: url('');
+}
