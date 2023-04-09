@@ -18,11 +18,8 @@ popupBtn.addEventListener("click", function () {
 tombol.addEventListener('click', function () {
     popup.style.display = "none";
 })
-
+let book = this.document.getElementById('flipbook')
 var html = document.documentElement;
-
-
-
 let i
 window.addEventListener('load', function () {
     
@@ -48,4 +45,5 @@ window.addEventListener('load', function () {
     }, 1000)
     
 });
+
 
