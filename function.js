@@ -68,7 +68,7 @@ inputGambar.addEventListener('change', function() {
 });
 
 function blur2(){
-  let atur = prompt('Masukkan Input')
+  let atur = prompt('Penulisan= bg-(colcor) / (tingkatan blur [10-100] ); contoh: bg-black/40')
   glass.classList.remove('bg-white/30')
   glass.classList.add(atur)
 }
