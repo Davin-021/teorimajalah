@@ -38,12 +38,19 @@
 </head>
 
 <body>
-    <form>
-        <label for="file">Pilih file:</label>
+
+<div id="showDev" onclick="showDev1()" class="border py-2 px-3 z-[99] bg-black text-white w-fit fixed">devMode</div>
+    <div id="devMode" class="hidden border fixed z-[99] w-full ">
+        <div id="hideDev" onclick="hideDev1()" class="border absolute z-[99] -bottom-10 right-[50%]">Hide</div>
+    <div class="mx-auto w-fit">
+        <label for="file">Pilih file Background:</label>
         <input type="file" id="input-gambar" name="file">
-        <h1 class="border w-fit p-2 mt-2" id="ubah-gambar" onclick="showFileUrl()">Ubah</h1>
-      </form>
-  
+    </div>
+      <div class="w-full">
+      <h1 class="border mx-auto  w-fit p-2 mt-2" onclick=blur2()>Atur Blur Background</h1>
+    </div>
+</div>
+
 
     <div id="loader" class=" fixed z-[999] bg-black w-full bg-opacity-60 flex justify-center items-center h-[100vh]"><svg class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
 		<defs>
@@ -73,7 +80,7 @@
 	</svg>
 </div>
 
-    <div id="konten" class=" w-[100%] absolute  bg-[url('https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130498.jpg&fm=jpg')]  bg-fixed md:bg-cover    bg-no-repeat">
+    <div id="konten" class=" w-[100%] absolute  bg-[url('https://images.pexels.com/photos/7130498/pexels-photo-7130498.jpeg?cs=srgb&dl=pexels-codioful-%28formerly-gradienta%29-7130498.jpg&fm=jpg')]  bg-fixed md:bg-cover bg-    bg-no-repeat">
         <div id="navbar" class=" backdrop-blur hidden grid-cols-4 fixed  bg-white/90 w-full top-0 left-0 h-16 lg:h-16 z-[999]">
             <div class="col-span-1 col-start-1  h-full flex  items-center">
                <img src="./img/jurnal.png" class="h-14 ml-10" alt="">
@@ -93,9 +100,9 @@
         <!-- <video id="background-video" class="w-full h-full object-cover fixed" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
             <source src="https://joy1.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0933_preview.mp4" type="video/mp4">
             </video> -->
-        <div class="h-fit mx-3 lg:mx-5 pb-14 rounded-2xl bg-white/60 lg:border-[2px] backdrop-blur-3xl duration-500    mt-14">
+        <div id="glass" class="h-fit mx-3 lg:mx-5 pb-14 rounded-2xl bg-white/30  backdrop-blur-3xl duration-500    mt-14">
             <div
-                class="     rounded-xl py-[7%] px-5 relative grid lg:grid-cols-2 grid-cols-1 w-[95%] mx-auto   transition-all  z-50">
+                class="rounded-xl py-[7%] px-5 relative grid lg:grid-cols-2 grid-cols-1 w-[95%] mx-auto   transition-all  z-50">
 
               
 

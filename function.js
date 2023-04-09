@@ -46,16 +46,19 @@ window.addEventListener('load', function () {
     }, 1000)
     
 });
-
+let glass = document.getElementById('glass')
+let showDev = document.getElementById('showDev')
+let hideDev = document.getElementById('hideDev')
 const inputGambar = document.getElementById('input-gambar');
 const ubahGambar = document.getElementById('ubah-gambar');
 const bgImage = document.getElementById('konten');
-
-ubahGambar.addEventListener('click', function() {
+dev=document.getElementById('devMode')
+inputGambar.addEventListener('change', function() {
   if (inputGambar.files && inputGambar.files[0]) {
     const reader = new FileReader();
     reader.onload = function(e) {
       bgImage.style.backgroundImage = "url('" + e.target.result + "')";
+
     }
     reader.readAsDataURL(inputGambar.files[0]);
   }
@@ -63,6 +66,29 @@ ubahGambar.addEventListener('click', function() {
     alert('gambar kosong')
   }
 });
+
+function blur2(){
+  let atur = prompt('Masukkan Input')
+  glass.classList.remove('bg-white/30')
+  glass.classList.add(atur)
+}
+
+function showDev1(){
+dev.classList.remove('hidden')
+showDev.classList.add('hidden')
+hideDev.classList.remove('hidden')
+}
+
+function hideDev1(){
+  dev.classList.add('hidden')
+  hideDev.classList.add('hidden')
+  showDev.classList.remove('hidden')
+}
+
+
+
+
+
 
   
 
