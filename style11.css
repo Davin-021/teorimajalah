@@ -35,6 +35,10 @@ height: 30px;
 background-color: red;
 margin-left: -1%;
 margin-top:-1%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 900;
 
 }
 

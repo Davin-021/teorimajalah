@@ -12,9 +12,10 @@ popup.appendChild(popupContent);
 popupBtn.addEventListener("click", function () {
 
     popup.style.display = "block";
-    popupContent.innerHTML = ` <iframe allowfullscreen="true" class="w-full transition-all h-[90%] absolute mt-5" src="https://ilham12359.github.io/emajalah/"></iframe>`;
+    popupContent.innerHTML = ` <iframe allowfullscreen="true" class="w-full transition-all h-[100%] absolute " src="https://ilham12359.github.io/emajalah/"></iframe>`;
     popupContent.appendChild(tombol);
 });
+tombol.innerHTML='X'
 tombol.addEventListener('click', function () {
     popup.style.display = "none";
 })
