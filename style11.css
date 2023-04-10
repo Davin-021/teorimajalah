@@ -191,3 +191,20 @@ overflow: visible;
   animation-play-state: paused !important;
 }
 
+.animasi {
+  position: relative;
+  animation: naik-turun 5s ease-in-out infinite;
+}
+
+@keyframes naik-turun {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
