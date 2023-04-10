@@ -18,34 +18,37 @@ popupBtn.addEventListener("click", function () {
 tombol.addEventListener('click', function () {
     popup.style.display = "none";
 })
-let book = this.document.getElementById('flipbook')
-var html = document.documentElement;
-let i
-let konten = document.getElementById('konten')
-window.addEventListener('load', function () {
+// let book = this.document.getElementById('flipbook')
+// var html = document.documentElement;
+// let i
+// let konten = document.getElementById('konten')
+// window.addEventListener('load', function () {
     
-    document.body.classList.add('overflow-hidden')
-    let book = this.document.getElementById('flipbook')
-    let preloader = document.getElementById('loader')
+//     document.body.classList.add('overflow-hidden')
+//     let book = this.document.getElementById('flipbook')
+//     let preloader = document.getElementById('loader')
     
-    let konten1 = this.document.getElementsByClassName('tt')
-    for (var i = 0; i < konten1.length; i++) {
-        konten1[i].classList.add('freeze')
+//     let konten1 = this.document.getElementsByClassName('tt')
+//     for (var i = 0; i < konten1.length; i++) {
+//         konten1[i].classList.add('freeze')
    
-    }
-    i=0
-    let c = setTimeout(function () {
-        preloader.classList.add('hidden')
-        for (var i = 0; i < konten1.length; i++) {
-            konten1[i].classList.remove('freeze')
-            book.classList.remove('hidden')
-        }
-        html.classList.add('scroll-smooth')
-        document.body.classList.remove('overflow-hidden')
-        AOS.init()
-    }, 1000)
+//     }
+//     i=0
+//     let c = setTimeout(function () {
+//         preloader.classList.add('hidden')
+//         for (var i = 0; i < konten1.length; i++) {
+//             konten1[i].classList.remove('freeze')
+//             book.classList.remove('hidden')
+//         }
+//         html.classList.add('scroll-smooth')
+//         document.body.classList.remove('overflow-hidden')
+      
+//     }, 1000)
     
-});
+// });
+
+AOS.init()
+
 let glass = document.getElementById('glass')
 let showDev = document.getElementById('showDev')
 let hideDev = document.getElementById('hideDev')
