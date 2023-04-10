@@ -57,19 +57,19 @@ const inputGambar = document.getElementById('input-gambar');
 const ubahGambar = document.getElementById('ubah-gambar');
 const bgImage = document.getElementById('konten');
 dev=document.getElementById('devMode')
-inputGambar.addEventListener('change', function() {
-  if (inputGambar.files && inputGambar.files[0]) {
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      bgImage.style.backgroundImage = "url('" + e.target.result + "')";
+// inputGambar.addEventListener('change', function() {
+//   if (inputGambar.files && inputGambar.files[0]) {
+//     const reader = new FileReader();
+//     reader.onload = function(e) {
+//       bgImage.style.backgroundImage = "url('" + e.target.result + "')";
 
-    }
-    reader.readAsDataURL(inputGambar.files[0]);
-  }
-  else{
-    alert('gambar kosong')
-  }
-});
+//     }
+//     reader.readAsDataURL(inputGambar.files[0]);
+//   }
+//   else{
+//     alert('gambar kosong')
+//   }
+// });
 
 function blur2(){
   let atur = prompt('Penulisan= bg-(colcor) / (tingkatan blur [10-100] ); contoh: bg-black/40')
@@ -89,7 +89,9 @@ function hideDev1(){
   showDev.classList.remove('hidden')
 }
 
-
+function sec(){
+  document.getElementById('sec').scrollIntoView({ behavior: 'smooth' });
+}
 
 
 
