@@ -212,3 +212,38 @@ overflow: visible;
   }
 }
 
+.geser {
+  position: absolute;
+  animation: geser 15s ease-in-out infinite;
+ 
+}
+
+
+
+
+@keyframes geser {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+@keyframes geser {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+}
