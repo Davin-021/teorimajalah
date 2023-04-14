@@ -1,3 +1,41 @@
+var swiper = new Swiper(".mySwiper", {
+
+  effect: "coverflow",
+  grabCursor: false,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  keyboard: true,
+  cssMode: false,
+  initialSlide: 1,
+  speed: 1500,
+  longSwipesMs: 5000,
+  spaceBetween: 0,
+  breakpoints: {
+
+      1024: {
+          spaceBetween: 200
+      },
+  },
+
+  coverflowEffect: {
+      rotate: 120,
+      stretch: 0,
+      depth: 300,
+      modifier: 1,
+      slideShadows: false,
+      lazyPreloadPrevNext: 100,
+
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: ".swiper-pagination",
+  },
+});
+
+
 const popupBtn = document.getElementById("buka");
 const popup = document.createElement("div");
 const popupContent = document.createElement("div");
