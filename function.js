@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   breakpoints: {
 
-      1024: {
+      800: {
           spaceBetween: 200
       },
   },
