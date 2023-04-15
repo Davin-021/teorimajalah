@@ -1,5 +1,4 @@
 var swiper = new Swiper(".mySwiper", {
-
   effect: "coverflow",
   grabCursor: false,
   centeredSlides: true,
@@ -82,6 +81,7 @@ window.addEventListener('load', function () {
         html.classList.add('scroll-smooth')
         document.body.classList.remove('overflow-hidden')
         AOS.init()
+        alert('Website dalam tahap pengembangan')
     }, 1000)
     
 });
