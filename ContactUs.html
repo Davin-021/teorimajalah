@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-full h-full">
+    <div class="w-full absolute h-full bg-gradient-to-tr from-[#43CBFF] to-[#9708CC]">
+            <div data-aos-duration="1000" data-aos="zoom-in"
+                class="  mt-[10%]  w-[90%] lg:w-[80%] bg-white/50 backdrop-blur-xl mx-auto shadow-2xl  px-5 h-fit rounded-xl ">
+                <div class="h-full w-full">
+                    <div class="pt-10">
+                        <h1 style="font-family: 'M PLUS 1', sans-serif;" class="text-center text-3xl mb-4 font-extrabold text-black">Hubungi Kami</h1>
+                        <p style=" font-family: 'M PLUS 1' , sans-serif;" class="text-center text-lg text-white">
+                            Berikan
+                            kritikan dan saran terhadap kami!</p>
+                    </div>
+                    <form>
+                        <div class="mt-10 flex flex-col w-[80%] mx-auto ">
+
+                            <input type="text" class="inline-block p-3 rounded-lg outline-amber-400"
+                                placeholder="Masukkan Nama" required
+                                oninvalid="this.setCustomValidity('Harap Masukkan Nama Anda!')"
+                                oninput="setCustomValidity('')" id="nameInput">
+
+                            <textarea id="message" rows="4"
+                                class="block p-2.5 w-full text-sm mt-5 outline-amber-400 text-gray-900 rounded-lg border"
+                                placeholder="Masukkan Pesan" required></textarea>
+                            <input type="submit"
+                                class="duration-500  transition-all active:scale-90 my-7 mx-auto w-fit py-3 px-9 rounded-full hover:bg-white/20 border border-purple-700  text-black"
+                                value="Kirim" id="submitForm" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

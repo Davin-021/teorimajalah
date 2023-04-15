@@ -81,7 +81,7 @@ window.addEventListener('load', function () {
         html.classList.add('scroll-smooth')
         document.body.classList.remove('overflow-hidden')
         AOS.init()
-        alert('Website dalam tahap pengembangan')
+        lert('Website dalam tahap pengembangan')
     }, 500)
     
 });
@@ -130,6 +130,15 @@ function hideDev1(){
 function sec(){
   document.getElementById('sec').scrollIntoView({ behavior: 'smooth' });
 }
+
+$(document).ready(function(){
+$('#contact').click(function(){
+   $('#contentContact').toggleClass('hidden')
+})
+$('#closeContact').click(function(){
+    $('#contentContact').addClass('hidden')
+})
+})
 
 
 
