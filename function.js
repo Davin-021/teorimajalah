@@ -81,7 +81,7 @@ window.addEventListener('load', function () {
         html.classList.add('scroll-smooth')
         document.body.classList.remove('overflow-hidden')
         AOS.init()
-        lert('Website dalam tahap pengembangan')
+        alert('Website dalam tahap pengembangan')
     }, 500)
     
 });
