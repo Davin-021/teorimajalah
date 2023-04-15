@@ -92,3 +92,25 @@
                 </div>
             </div>
         </div>
+
+    <!-- <div id="showDev" onclick="showDev1()"
+            class="border py-2 px-3 z-[99] hover:scale-110 bg-black text-white w-fit fixed">DevMode</div>
+        <div id="devMode" class="hidden border fixed z-[99] w-full ">
+            <div id="hideDev" onclick="hideDev1()" class="border absolute z-[99] -bottom-10 right-[50%]">Hide</div>
+            <div class="mx-auto w-fit">
+                <label for="file">Pilih file Background:</label>
+                <input type="file" id="input-gambar" name="file">
+            </div>
+            <div class="w-full">
+                <h1 class="border mx-auto  w-fit p-2 mt-2" onclick=blur2()>Atur Blur Background</h1>
+            </div>
+        </div> -->
+
+    <!-- <video id="background-video" class="w-full object-cover h-full fixed" autoplay loop muted poster="">
+            <source class="w-full" src="./vid/1.mp4" type="video/mp4">
+            </video> -->
+    <!-- <video id="background-video" class="w-full h-full object-cover fixed" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://joy1.videvo.net/videvo_files/video/free/2013-08/large_watermarked/hd0933_preview.mp4" type="video/mp4">
+            </video> -->
+
+            bg-gradient-to-r from-[#19FB9B] to-[#8C01FA]
