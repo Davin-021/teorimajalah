@@ -47,7 +47,8 @@ document.body.appendChild(popup);
 popup.appendChild(popupContent);
 
 popupBtn.addEventListener("click", function () {
-
+    popup.classList.add("animate__animated")
+    popup.classList.add("animate__zoomIn")
     popup.style.display = "block";
     popupContent.innerHTML = ` <iframe allowfullscreen="true" class="w-full transition-all h-[100%] absolute " src="https://ilham12359.github.io/emajalah/"></iframe>`;
     popupContent.appendChild(tombol);
@@ -81,7 +82,7 @@ window.addEventListener('load', function () {
         html.classList.add('scroll-smooth')
         document.body.classList.remove('overflow-hidden')
         AOS.init()
-        alert('Website dalam tahap pengembangan')
+        alrt('Website dalam tahap pengembangan')
     }, 500)
     
 });
