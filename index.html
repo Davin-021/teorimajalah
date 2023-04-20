@@ -97,15 +97,14 @@
                             Berikan
                             kritikan dan saran terhadap kami!</p>
                     </div>
-                    <form>
+                    <form id="formcontent" action="https://formspree.io/f/xlekajan" method="POST">
                         <div class="mt-10 flex flex-col w-[80%] mx-auto ">
-
-                            <input type="text" class="inline-block p-3 rounded-lg outline-amber-400"
+                            <input type="text" name="Nama Pengirim" class="inline-block p-3 rounded-lg outline-amber-400"
                                 placeholder="Masukkan Nama" required
                                 oninvalid="this.setCustomValidity('Harap Masukkan Nama Anda!')"
                                 oninput="setCustomValidity('')" id="nameInput">
 
-                            <textarea id="message" rows="4"
+                            <textarea id="message" name="Pesan" rows="4"
                                 class="block p-2.5 w-full text-sm mt-5 outline-amber-400 text-gray-900 rounded-lg border"
                                 placeholder="Masukkan Pesan" required></textarea>
                             <input type="submit"

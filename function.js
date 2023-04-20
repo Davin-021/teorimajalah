@@ -128,9 +128,30 @@ function sec() {
 
 $(document).ready(function () {
   $("#contact").click(function () {
-    $("#contentContact").toggleClass("hidden");
+    $("#contentContact").show()
   });
   $("#closeContact").click(function () {
-    $("#contentContact").addClass("hidden");
+    $("#contentContact").hide()
   });
+});
+
+
+
+
+const contactForm = document.getElementById("formcontent");
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const url = e.target.action;
+  const formData = new FormData(contactForm);
+
+  fetch(url, {
+    method: "POST",
+    body: formData,
+    mode: "no-cors",
+  })
+    .then(() => {
+      $('#contentContact').hide()
+      alert('Pesan Terkirim')
+    })
 });
